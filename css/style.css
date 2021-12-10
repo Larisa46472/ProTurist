@@ -273,12 +273,17 @@ font-size: 24px;
 }
 
 /*страница зон посещения*/
+
+.vizit {
+    background:rgba(0, 0, 0, 0.5);
+}
 .scheme__vizit{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     padding-bottom: 30px;
+    
 }
 .vizit__block {
     display: flex;
