@@ -207,6 +207,7 @@ font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 /*подвал*/
 .footer {
@@ -343,6 +344,7 @@ font-size: 24px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 40px;
 }
 .row {
     display: flex;
@@ -371,4 +373,7 @@ font-size: 24px;
 .order__input {
     margin-left: 25%;
     margin-right: 15px;
+}
+.input * {
+   cursor: pointer; 
 }
