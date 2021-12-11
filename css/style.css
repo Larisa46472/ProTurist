@@ -228,10 +228,10 @@ font-size: 24px;
 /*страница результатов поиска*/
 .result {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 300px;
    
-    background: url('../img/2033-001.jpg') no-repeat center /cover ;
+    background: url('../img/2033-001.jpg') no-repeat center /cover  fixed;
     
 }
 
@@ -306,4 +306,69 @@ font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*бронирование*/
+.order {
+        position: relative;
+    min-height: 100vh;
+    padding-top: 300px;
+    background: url('../img/2033-001.jpg') no-repeat center /cover fixed;
+    color: seashell;
+    font-size: 18px;
+}
+
+.order::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+   
+}
+.order__block {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    align-items: start;
+}
+.rows__block {
+    background: rgba(200, 200, 200, 0.3);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 650px;
+    width: 100%;
+    border: 1px solid goldenrod;;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size:32px ;
+    max-width: 40%;
+  
+}
+.desc_order {
+    font-size: 26px;
+    max-width: 40%;
+   
+}
+.inputs {
+    justify-content: start;
+}
+.order__input {
+    margin-left: 25%;
+    margin-right: 15px;
 }
